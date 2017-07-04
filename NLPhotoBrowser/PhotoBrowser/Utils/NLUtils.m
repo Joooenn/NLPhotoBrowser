@@ -10,9 +10,9 @@
 #import "NLMacro.h"
 
 @implementation NLUtils
-
+static CGFloat const kSpacing = 5.0;
 + (CGFloat)fetchHeightWithText:(NSString *)text font:(UIFont *)font {
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 0)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH-2*kSpacing, 0)];
     label.text = text;
     label.font = font;
     label.numberOfLines = 0;

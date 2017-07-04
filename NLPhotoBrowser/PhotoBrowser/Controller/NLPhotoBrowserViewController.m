@@ -48,7 +48,7 @@ static CGFloat const kMaxDescribViewHeight = 80.0;
 - (instancetype)initWithItems:(NSArray *)anItems describ:(NSString *)describ {
     self = [super init];
     if (self == nil) return nil;
-    _photos = anItems;
+    _photos = [NLBrowserViewModel createPhotoModels:anItems];
     _describ = describ;
     return self;
 }
@@ -155,7 +155,7 @@ static CGFloat const kSpacing = 8.0;
 }
 - (UICollectionView *)collectionView {
     if (!_collectionView) {
-        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(-kSpacing, 0, self.view.frame.size.width + 2 * kSpacing, self.view.frame.size.height) collectionViewLayout:self.flowLayout];
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(-kSpacing, 0, SCREEN_WIDTH + 2 * kSpacing, SCREEN_HEIGHT) collectionViewLayout:self.flowLayout];
         _collectionView.backgroundColor = [UIColor blackColor];
         _collectionView.delegate = self;
         _collectionView.pagingEnabled = YES;
@@ -178,7 +178,7 @@ static CGFloat const kSpacing = 8.0;
 }
 - (NLTitleView *)cusTitleView {
     if (!_cusTitleView) {
-        _cusTitleView = [[NLTitleView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH - 160.0, 44) items:self.photos];
+        _cusTitleView = [[NLTitleView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH - 200.0, 44) items:self.photos];
         _cusTitleView.page = self.page;
     }
     return _cusTitleView;

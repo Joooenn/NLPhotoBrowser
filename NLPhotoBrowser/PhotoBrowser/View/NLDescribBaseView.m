@@ -14,6 +14,8 @@
 #define TEXT_FONT_NAME @"PingFangSC"
 #define TEXT_FONT_SIZE 14.0
 
+static CGFloat const kSpacing = 5.0;
+
 @interface NLDescribBaseView ()
 
 @end
@@ -37,7 +39,7 @@ static CATextLayer *text_layer(CGFloat contentScale, CTFontRef font, NSString *t
     layer.string = text;
     layer.contentsScale = contentScale;
     layer.wrapped = YES;
-    layer.alignmentMode = kCAAlignmentJustified;
+    layer.alignmentMode = kCAAlignmentLeft;
     return layer;
 }
 
@@ -66,16 +68,17 @@ static CATextLayer *text_layer(CGFloat contentScale, CTFontRef font, NSString *t
     _textLayer = text_layer(contentsScale, font, _describ);
     _textLayer.foregroundColor = [UIColor whiteColor].CGColor;
     _textLayer.backgroundColor = [UIColor clearColor].CGColor;
-    _textLayer.bounds = CGRectMake(0, 0, SCREEN_WIDTH, [NLUtils fetchHeightWithText:_describ font:[UIFont fontWithName:TEXT_FONT_NAME size:TEXT_FONT_SIZE]]);
+    _textLayer.bounds = CGRectMake(-kSpacing, -kSpacing, SCREEN_WIDTH-2*kSpacing, [NLUtils fetchHeightWithText:_describ font:[UIFont fontWithName:TEXT_FONT_NAME size:TEXT_FONT_SIZE]]);
     CGRect bounds = _textLayer.bounds;
     _textLayer.position = CGPointMake(CGRectGetMidX(bounds), CGRectGetMidY(bounds));
+    
     [self.layer addSublayer:_textLayer];
 }
 
 - (void)layoutTextLayer {
     CGRect bounds = self.bounds;
     CGPoint center = CGPointMake(CGRectGetMidX(bounds), CGRectGetMidY(bounds));
-    _textLayer.bounds = CGRectMake(0, 0, SCREEN_WIDTH, [NLUtils fetchHeightWithText:_describ font:[UIFont fontWithName:TEXT_FONT_NAME size:TEXT_FONT_SIZE]]);
+    _textLayer.bounds = CGRectMake(-kSpacing, -kSpacing, SCREEN_WIDTH-2*kSpacing, [NLUtils fetchHeightWithText:_describ font:[UIFont fontWithName:TEXT_FONT_NAME size:TEXT_FONT_SIZE]]);
     _textLayer.position = center;
 }
 
