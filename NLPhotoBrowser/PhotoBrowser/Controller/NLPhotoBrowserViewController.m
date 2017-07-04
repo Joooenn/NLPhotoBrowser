@@ -122,7 +122,7 @@ static CGFloat const kMaxDescribViewHeight = 80.0;
     
     self.dataSource.items = self.photos;
     self.describView.describ = self.describ;
-    self.describView.height = [NLUtils fetchHeightWithText:self.describView.describ font:[UIFont systemFontOfSize:14]] + kSpacing;
+    self.describView.height = [NLUtils fetchHeightWithText:self.describView.describ font:[UIFont fontWithName:@"PingFangSC" size:14.0]];
     [self.collectionView reloadData];
 }
 
@@ -172,13 +172,13 @@ static CGFloat const kSpacing = 8.0;
 }
 - (NLDescribBaseView *)describView {
     if (!_describView) {
-        _describView = [[NLDescribBaseView alloc] init];
+        _describView = [[NLDescribBaseView alloc] initWithDescrib:self.describ];
     }
     return _describView;
 }
 - (NLTitleView *)cusTitleView {
     if (!_cusTitleView) {
-        _cusTitleView = [[NLTitleView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH - 170.0, 44) items:self.photos];
+        _cusTitleView = [[NLTitleView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH - 160.0, 44) items:self.photos];
         _cusTitleView.page = self.page;
     }
     return _cusTitleView;

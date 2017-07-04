@@ -35,7 +35,6 @@ static CATextLayer *text_layer(CGFloat contentScale, CTFontRef font, NSString *t
     layer.font = font;
     layer.fontSize = TEXT_FONT_SIZE;
     layer.string = text;
-    layer.alignmentMode = kCAAlignmentCenter;
     layer.contentsScale = contentScale;
     layer.wrapped = YES;
     layer.alignmentMode = kCAAlignmentJustified;
