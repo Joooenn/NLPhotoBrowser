@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1E75488CD4E3AF01E5185F8A56E2F21FE2E22868",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "28310ec8-49ae-9e4d-bc56-c8775405d2bd++8347" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "28310ec8-49ae-9e4d-bc56-c8775405d2bd++8347" : 9223372036854775807,
+    "1E75488CD4E3AF01E5185F8A56E2F21FE2E22868" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "106FECCD-6F9D-4FB7-891C-C6511ADECFFA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "28310ec8-49ae-9e4d-bc56-c8775405d2bd++8347" : "..\/..\/xfj",
+    "1E75488CD4E3AF01E5185F8A56E2F21FE2E22868" : "NLPhotoBrowser\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "NLPhotoBrowser",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "NLPhotoBrowser.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:liangzcn\/NLPhotoBrowser.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1E75488CD4E3AF01E5185F8A56E2F21FE2E22868"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/dev.xlbyun.cn:9443\/svn\/XFJiOS",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "28310ec8-49ae-9e4d-bc56-c8775405d2bd++8347"
+    }
+  ]
+}

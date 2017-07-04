@@ -19,15 +19,15 @@
 		5E08EF2D1F04DEC1005CC621 /* NLPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E08EF2C1F04DEC1005CC621 /* NLPhotoCell.m */; };
 		5E08EF311F04F566005CC621 /* NLCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E08EF301F04F566005CC621 /* NLCollectionViewDataSource.m */; };
 		5E08EF341F04F761005CC621 /* NLPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E08EF331F04F761005CC621 /* NLPhotoModel.m */; };
-		5E08EF381F050352005CC621 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E08EF361F050352005CC621 /* UIView+Frame.m */; };
 		5E11A2791F09E7B900A84C44 /* NLUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E11A2781F09E7B900A84C44 /* NLUtils.m */; };
 		5E11A2831F0A2A4000A84C44 /* NLTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E11A2821F0A2A3E00A84C44 /* NLTitleView.m */; };
-		5E11A2881F0A4C1500A84C44 /* XFJActionSheetHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E11A2841F0A4C1400A84C44 /* XFJActionSheetHeaderView.m */; };
-		5E11A2891F0A4C1500A84C44 /* XFJActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E11A2851F0A4C1400A84C44 /* XFJActionSheetView.m */; };
+		5E3EEF0E1F0B7AA400C5BCFA /* XFJActionSheetHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3EEF0B1F0B7AA400C5BCFA /* XFJActionSheetHeaderView.m */; };
+		5E3EEF0F1F0B7AA400C5BCFA /* XFJActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3EEF0D1F0B7AA400C5BCFA /* XFJActionSheetView.m */; };
+		5E3EEF141F0B7AB300C5BCFA /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3EEF111F0B7AB300C5BCFA /* UINavigationBar+Awesome.m */; };
+		5E3EEF151F0B7AB300C5BCFA /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3EEF131F0B7AB300C5BCFA /* UIView+Frame.m */; };
 		5E5F04E51F05F660003D8EF1 /* NLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F04E41F05F660003D8EF1 /* NLBaseViewController.m */; };
 		5E5F04E81F062C97003D8EF1 /* NLBottomToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F04E71F062C97003D8EF1 /* NLBottomToolbar.m */; };
 		5E5F04EB1F064C82003D8EF1 /* NLDescribBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F04EA1F064C82003D8EF1 /* NLDescribBaseView.m */; };
-		5E662E461F05EB21006652F4 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E662E451F05EB21006652F4 /* UINavigationBar+Awesome.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,24 +53,24 @@
 		5E08EF301F04F566005CC621 /* NLCollectionViewDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLCollectionViewDataSource.m; sourceTree = "<group>"; };
 		5E08EF321F04F761005CC621 /* NLPhotoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLPhotoModel.h; sourceTree = "<group>"; };
 		5E08EF331F04F761005CC621 /* NLPhotoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLPhotoModel.m; sourceTree = "<group>"; };
-		5E08EF361F050352005CC621 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Frame.m"; path = "../../../../../xfj/xfj/Category/UIView+Frame.m"; sourceTree = "<group>"; };
-		5E08EF371F050352005CC621 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Frame.h"; path = "../../../../../xfj/xfj/Category/UIView+Frame.h"; sourceTree = "<group>"; };
 		5E11A2771F09E7B900A84C44 /* NLUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLUtils.h; sourceTree = "<group>"; };
 		5E11A2781F09E7B900A84C44 /* NLUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLUtils.m; sourceTree = "<group>"; };
 		5E11A2811F0A2A3D00A84C44 /* NLTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLTitleView.h; sourceTree = "<group>"; };
 		5E11A2821F0A2A3E00A84C44 /* NLTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLTitleView.m; sourceTree = "<group>"; };
-		5E11A2841F0A4C1400A84C44 /* XFJActionSheetHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFJActionSheetHeaderView.m; path = ../../../../../../xfj/xfj/Views/XFJActionSheetView/XFJActionSheetHeaderView.m; sourceTree = "<group>"; };
-		5E11A2851F0A4C1400A84C44 /* XFJActionSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFJActionSheetView.m; path = ../../../../../../xfj/xfj/Views/XFJActionSheetView/XFJActionSheetView.m; sourceTree = "<group>"; };
-		5E11A2861F0A4C1400A84C44 /* XFJActionSheetHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFJActionSheetHeaderView.h; path = ../../../../../../xfj/xfj/Views/XFJActionSheetView/XFJActionSheetHeaderView.h; sourceTree = "<group>"; };
-		5E11A2871F0A4C1400A84C44 /* XFJActionSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFJActionSheetView.h; path = ../../../../../../xfj/xfj/Views/XFJActionSheetView/XFJActionSheetView.h; sourceTree = "<group>"; };
+		5E3EEF0A1F0B7AA400C5BCFA /* XFJActionSheetHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFJActionSheetHeaderView.h; sourceTree = "<group>"; };
+		5E3EEF0B1F0B7AA400C5BCFA /* XFJActionSheetHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFJActionSheetHeaderView.m; sourceTree = "<group>"; };
+		5E3EEF0C1F0B7AA400C5BCFA /* XFJActionSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFJActionSheetView.h; sourceTree = "<group>"; };
+		5E3EEF0D1F0B7AA400C5BCFA /* XFJActionSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFJActionSheetView.m; sourceTree = "<group>"; };
+		5E3EEF101F0B7AB300C5BCFA /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		5E3EEF111F0B7AB300C5BCFA /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
+		5E3EEF121F0B7AB300C5BCFA /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		5E3EEF131F0B7AB300C5BCFA /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		5E5F04E31F05F660003D8EF1 /* NLBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLBaseViewController.h; sourceTree = "<group>"; };
 		5E5F04E41F05F660003D8EF1 /* NLBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLBaseViewController.m; sourceTree = "<group>"; };
 		5E5F04E61F062C97003D8EF1 /* NLBottomToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLBottomToolbar.h; sourceTree = "<group>"; };
 		5E5F04E71F062C97003D8EF1 /* NLBottomToolbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLBottomToolbar.m; sourceTree = "<group>"; };
 		5E5F04E91F064C82003D8EF1 /* NLDescribBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLDescribBaseView.h; sourceTree = "<group>"; };
 		5E5F04EA1F064C82003D8EF1 /* NLDescribBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLDescribBaseView.m; sourceTree = "<group>"; };
-		5E662E441F05EB21006652F4 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+Awesome.h"; path = "../../../../../xfj/xfj/Category/UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
-		5E662E451F05EB21006652F4 /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+Awesome.m"; path = "../../../../../xfj/xfj/Category/UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
 		C89E1D24C54458DC9CFA0077 /* libPods-NLPhotoBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NLPhotoBrowser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC721620DB5D23FF4606528D /* Pods-NLPhotoBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLPhotoBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NLPhotoBrowser/Pods-NLPhotoBrowser.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,10 +138,10 @@
 		5E08EF221F04DDC8005CC621 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5E11A2861F0A4C1400A84C44 /* XFJActionSheetHeaderView.h */,
-				5E11A2841F0A4C1400A84C44 /* XFJActionSheetHeaderView.m */,
-				5E11A2871F0A4C1400A84C44 /* XFJActionSheetView.h */,
-				5E11A2851F0A4C1400A84C44 /* XFJActionSheetView.m */,
+				5E3EEF0A1F0B7AA400C5BCFA /* XFJActionSheetHeaderView.h */,
+				5E3EEF0B1F0B7AA400C5BCFA /* XFJActionSheetHeaderView.m */,
+				5E3EEF0C1F0B7AA400C5BCFA /* XFJActionSheetView.h */,
+				5E3EEF0D1F0B7AA400C5BCFA /* XFJActionSheetView.m */,
 				5E08EF2B1F04DEC1005CC621 /* NLPhotoCell.h */,
 				5E08EF2C1F04DEC1005CC621 /* NLPhotoCell.m */,
 				5E5F04E61F062C97003D8EF1 /* NLBottomToolbar.h */,
@@ -181,10 +181,10 @@
 		5E08EF351F05034B005CC621 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				5E662E441F05EB21006652F4 /* UINavigationBar+Awesome.h */,
-				5E662E451F05EB21006652F4 /* UINavigationBar+Awesome.m */,
-				5E08EF371F050352005CC621 /* UIView+Frame.h */,
-				5E08EF361F050352005CC621 /* UIView+Frame.m */,
+				5E3EEF101F0B7AB300C5BCFA /* UINavigationBar+Awesome.h */,
+				5E3EEF111F0B7AB300C5BCFA /* UINavigationBar+Awesome.m */,
+				5E3EEF121F0B7AB300C5BCFA /* UIView+Frame.h */,
+				5E3EEF131F0B7AB300C5BCFA /* UIView+Frame.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -337,21 +337,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E5F04E51F05F660003D8EF1 /* NLBaseViewController.m in Sources */,
-				5E11A2891F0A4C1500A84C44 /* XFJActionSheetView.m in Sources */,
 				5E5F04EB1F064C82003D8EF1 /* NLDescribBaseView.m in Sources */,
 				5E08EF311F04F566005CC621 /* NLCollectionViewDataSource.m in Sources */,
+				5E3EEF141F0B7AB300C5BCFA /* UINavigationBar+Awesome.m in Sources */,
 				5E08EF261F04DE74005CC621 /* NLPhotoBrowserViewController.m in Sources */,
+				5E3EEF0E1F0B7AA400C5BCFA /* XFJActionSheetHeaderView.m in Sources */,
 				5E08EF101F04DCA5005CC621 /* ViewController.m in Sources */,
-				5E08EF381F050352005CC621 /* UIView+Frame.m in Sources */,
 				5E08EF1B1F04DCA5005CC621 /* main.m in Sources */,
 				5E5F04E81F062C97003D8EF1 /* NLBottomToolbar.m in Sources */,
-				5E11A2881F0A4C1500A84C44 /* XFJActionSheetHeaderView.m in Sources */,
 				5E08EF0D1F04DCA5005CC621 /* AppDelegate.m in Sources */,
 				5E08EF2D1F04DEC1005CC621 /* NLPhotoCell.m in Sources */,
+				5E3EEF0F1F0B7AA400C5BCFA /* XFJActionSheetView.m in Sources */,
 				5E08EF341F04F761005CC621 /* NLPhotoModel.m in Sources */,
 				5E11A2791F09E7B900A84C44 /* NLUtils.m in Sources */,
+				5E3EEF151F0B7AB300C5BCFA /* UIView+Frame.m in Sources */,
 				5E08EF2A1F04DE9F005CC621 /* NLBrowserViewModel.m in Sources */,
-				5E662E461F05EB21006652F4 /* UINavigationBar+Awesome.m in Sources */,
 				5E11A2831F0A2A4000A84C44 /* NLTitleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
