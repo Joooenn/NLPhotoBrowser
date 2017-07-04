@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C8E17793956B711F4EA275E /* libPods-NLPhotoBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C89E1D24C54458DC9CFA0077 /* libPods-NLPhotoBrowser.a */; };
+		5E08EF0D1F04DCA5005CC621 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E08EF0C1F04DCA5005CC621 /* AppDelegate.m */; };
+		5E08EF101F04DCA5005CC621 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E08EF0F1F04DCA5005CC621 /* ViewController.m */; };
+		5E08EF131F04DCA5005CC621 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E08EF111F04DCA5005CC621 /* Main.storyboard */; };
+		5E08EF151F04DCA5005CC621 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E08EF141F04DCA5005CC621 /* Assets.xcassets */; };
+		5E08EF181F04DCA5005CC621 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E08EF161F04DCA5005CC621 /* LaunchScreen.storyboard */; };
+		5E08EF1B1F04DCA5005CC621 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E08EF1A1F04DCA5005CC621 /* main.m */; };
+		5E08EF261F04DE74005CC621 /* NLPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E08EF251F04DE74005CC621 /* NLPhotoBrowserViewController.m */; };
+		5E08EF2A1F04DE9F005CC621 /* NLBrowserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E08EF291F04DE9F005CC621 /* NLBrowserViewModel.m */; };
+		5E08EF2D1F04DEC1005CC621 /* NLPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E08EF2C1F04DEC1005CC621 /* NLPhotoCell.m */; };
+		5E08EF311F04F566005CC621 /* NLCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E08EF301F04F566005CC621 /* NLCollectionViewDataSource.m */; };
+		5E08EF341F04F761005CC621 /* NLPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E08EF331F04F761005CC621 /* NLPhotoModel.m */; };
+		5E08EF381F050352005CC621 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E08EF361F050352005CC621 /* UIView+Frame.m */; };
+		5E11A2791F09E7B900A84C44 /* NLUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E11A2781F09E7B900A84C44 /* NLUtils.m */; };
+		5E11A2831F0A2A4000A84C44 /* NLTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E11A2821F0A2A3E00A84C44 /* NLTitleView.m */; };
+		5E11A2881F0A4C1500A84C44 /* XFJActionSheetHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E11A2841F0A4C1400A84C44 /* XFJActionSheetHeaderView.m */; };
+		5E11A2891F0A4C1500A84C44 /* XFJActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E11A2851F0A4C1400A84C44 /* XFJActionSheetView.m */; };
+		5E5F04E51F05F660003D8EF1 /* NLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F04E41F05F660003D8EF1 /* NLBaseViewController.m */; };
+		5E5F04E81F062C97003D8EF1 /* NLBottomToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F04E71F062C97003D8EF1 /* NLBottomToolbar.m */; };
+		5E5F04EB1F064C82003D8EF1 /* NLDescribBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F04EA1F064C82003D8EF1 /* NLDescribBaseView.m */; };
+		5E662E461F05EB21006652F4 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E662E451F05EB21006652F4 /* UINavigationBar+Awesome.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2BA7A2D10A0D1BAEDE6000F9 /* Pods-NLPhotoBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLPhotoBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-NLPhotoBrowser/Pods-NLPhotoBrowser.release.xcconfig"; sourceTree = "<group>"; };
+		5E08EF081F04DCA5005CC621 /* NLPhotoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NLPhotoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E08EF0B1F04DCA5005CC621 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5E08EF0C1F04DCA5005CC621 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5E08EF0E1F04DCA5005CC621 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5E08EF0F1F04DCA5005CC621 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5E08EF121F04DCA5005CC621 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E08EF141F04DCA5005CC621 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E08EF171F04DCA5005CC621 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E08EF191F04DCA5005CC621 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E08EF1A1F04DCA5005CC621 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E08EF241F04DE74005CC621 /* NLPhotoBrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLPhotoBrowserViewController.h; sourceTree = "<group>"; };
+		5E08EF251F04DE74005CC621 /* NLPhotoBrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLPhotoBrowserViewController.m; sourceTree = "<group>"; };
+		5E08EF281F04DE9F005CC621 /* NLBrowserViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLBrowserViewModel.h; sourceTree = "<group>"; };
+		5E08EF291F04DE9F005CC621 /* NLBrowserViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLBrowserViewModel.m; sourceTree = "<group>"; };
+		5E08EF2B1F04DEC1005CC621 /* NLPhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLPhotoCell.h; sourceTree = "<group>"; };
+		5E08EF2C1F04DEC1005CC621 /* NLPhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLPhotoCell.m; sourceTree = "<group>"; };
+		5E08EF2E1F04EEF2005CC621 /* NLMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLMacro.h; sourceTree = "<group>"; };
+		5E08EF2F1F04F566005CC621 /* NLCollectionViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLCollectionViewDataSource.h; sourceTree = "<group>"; };
+		5E08EF301F04F566005CC621 /* NLCollectionViewDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLCollectionViewDataSource.m; sourceTree = "<group>"; };
+		5E08EF321F04F761005CC621 /* NLPhotoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLPhotoModel.h; sourceTree = "<group>"; };
+		5E08EF331F04F761005CC621 /* NLPhotoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLPhotoModel.m; sourceTree = "<group>"; };
+		5E08EF361F050352005CC621 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Frame.m"; path = "../../../../../xfj/xfj/Category/UIView+Frame.m"; sourceTree = "<group>"; };
+		5E08EF371F050352005CC621 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Frame.h"; path = "../../../../../xfj/xfj/Category/UIView+Frame.h"; sourceTree = "<group>"; };
+		5E11A2771F09E7B900A84C44 /* NLUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLUtils.h; sourceTree = "<group>"; };
+		5E11A2781F09E7B900A84C44 /* NLUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLUtils.m; sourceTree = "<group>"; };
+		5E11A2811F0A2A3D00A84C44 /* NLTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLTitleView.h; sourceTree = "<group>"; };
+		5E11A2821F0A2A3E00A84C44 /* NLTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLTitleView.m; sourceTree = "<group>"; };
+		5E11A2841F0A4C1400A84C44 /* XFJActionSheetHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFJActionSheetHeaderView.m; path = ../../../../../../xfj/xfj/Views/XFJActionSheetView/XFJActionSheetHeaderView.m; sourceTree = "<group>"; };
+		5E11A2851F0A4C1400A84C44 /* XFJActionSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XFJActionSheetView.m; path = ../../../../../../xfj/xfj/Views/XFJActionSheetView/XFJActionSheetView.m; sourceTree = "<group>"; };
+		5E11A2861F0A4C1400A84C44 /* XFJActionSheetHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFJActionSheetHeaderView.h; path = ../../../../../../xfj/xfj/Views/XFJActionSheetView/XFJActionSheetHeaderView.h; sourceTree = "<group>"; };
+		5E11A2871F0A4C1400A84C44 /* XFJActionSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFJActionSheetView.h; path = ../../../../../../xfj/xfj/Views/XFJActionSheetView/XFJActionSheetView.h; sourceTree = "<group>"; };
+		5E5F04E31F05F660003D8EF1 /* NLBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLBaseViewController.h; sourceTree = "<group>"; };
+		5E5F04E41F05F660003D8EF1 /* NLBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLBaseViewController.m; sourceTree = "<group>"; };
+		5E5F04E61F062C97003D8EF1 /* NLBottomToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLBottomToolbar.h; sourceTree = "<group>"; };
+		5E5F04E71F062C97003D8EF1 /* NLBottomToolbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLBottomToolbar.m; sourceTree = "<group>"; };
+		5E5F04E91F064C82003D8EF1 /* NLDescribBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLDescribBaseView.h; sourceTree = "<group>"; };
+		5E5F04EA1F064C82003D8EF1 /* NLDescribBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLDescribBaseView.m; sourceTree = "<group>"; };
+		5E662E441F05EB21006652F4 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+Awesome.h"; path = "../../../../../xfj/xfj/Category/UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		5E662E451F05EB21006652F4 /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+Awesome.m"; path = "../../../../../xfj/xfj/Category/UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
+		C89E1D24C54458DC9CFA0077 /* libPods-NLPhotoBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NLPhotoBrowser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC721620DB5D23FF4606528D /* Pods-NLPhotoBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLPhotoBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NLPhotoBrowser/Pods-NLPhotoBrowser.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E08EF051F04DCA5005CC621 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8E17793956B711F4EA275E /* libPods-NLPhotoBrowser.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E08EEFF1F04DCA5005CC621 = {
+			isa = PBXGroup;
+			children = (
+				5E08EF0A1F04DCA5005CC621 /* NLPhotoBrowser */,
+				5E08EF091F04DCA5005CC621 /* Products */,
+				9002C91B34516BDA6825733C /* Pods */,
+				86C1F04DCB84705D75C385A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5E08EF091F04DCA5005CC621 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E08EF081F04DCA5005CC621 /* NLPhotoBrowser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E08EF0A1F04DCA5005CC621 /* NLPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				5E08EF351F05034B005CC621 /* Category */,
+				5E08EF211F04DDA6005CC621 /* PhotoBrowser */,
+				5E08EF0B1F04DCA5005CC621 /* AppDelegate.h */,
+				5E08EF0C1F04DCA5005CC621 /* AppDelegate.m */,
+				5E08EF0E1F04DCA5005CC621 /* ViewController.h */,
+				5E08EF0F1F04DCA5005CC621 /* ViewController.m */,
+				5E08EF111F04DCA5005CC621 /* Main.storyboard */,
+				5E08EF141F04DCA5005CC621 /* Assets.xcassets */,
+				5E08EF161F04DCA5005CC621 /* LaunchScreen.storyboard */,
+				5E08EF191F04DCA5005CC621 /* Info.plist */,
+				5E08EF1A1F04DCA5005CC621 /* main.m */,
+				5E08EF2E1F04EEF2005CC621 /* NLMacro.h */,
+			);
+			path = NLPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		5E08EF211F04DDA6005CC621 /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				5E11A2761F09E7A900A84C44 /* Utils */,
+				5E08EF271F04DE85005CC621 /* Model */,
+				5E08EF231F04DDC8005CC621 /* Controller */,
+				5E08EF221F04DDC8005CC621 /* View */,
+			);
+			path = PhotoBrowser;
+			sourceTree = "<group>";
+		};
+		5E08EF221F04DDC8005CC621 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5E11A2861F0A4C1400A84C44 /* XFJActionSheetHeaderView.h */,
+				5E11A2841F0A4C1400A84C44 /* XFJActionSheetHeaderView.m */,
+				5E11A2871F0A4C1400A84C44 /* XFJActionSheetView.h */,
+				5E11A2851F0A4C1400A84C44 /* XFJActionSheetView.m */,
+				5E08EF2B1F04DEC1005CC621 /* NLPhotoCell.h */,
+				5E08EF2C1F04DEC1005CC621 /* NLPhotoCell.m */,
+				5E5F04E61F062C97003D8EF1 /* NLBottomToolbar.h */,
+				5E5F04E71F062C97003D8EF1 /* NLBottomToolbar.m */,
+				5E5F04E91F064C82003D8EF1 /* NLDescribBaseView.h */,
+				5E5F04EA1F064C82003D8EF1 /* NLDescribBaseView.m */,
+				5E11A2811F0A2A3D00A84C44 /* NLTitleView.h */,
+				5E11A2821F0A2A3E00A84C44 /* NLTitleView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5E08EF231F04DDC8005CC621 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5E08EF241F04DE74005CC621 /* NLPhotoBrowserViewController.h */,
+				5E08EF251F04DE74005CC621 /* NLPhotoBrowserViewController.m */,
+				5E5F04E31F05F660003D8EF1 /* NLBaseViewController.h */,
+				5E5F04E41F05F660003D8EF1 /* NLBaseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5E08EF271F04DE85005CC621 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E08EF281F04DE9F005CC621 /* NLBrowserViewModel.h */,
+				5E08EF291F04DE9F005CC621 /* NLBrowserViewModel.m */,
+				5E08EF2F1F04F566005CC621 /* NLCollectionViewDataSource.h */,
+				5E08EF301F04F566005CC621 /* NLCollectionViewDataSource.m */,
+				5E08EF321F04F761005CC621 /* NLPhotoModel.h */,
+				5E08EF331F04F761005CC621 /* NLPhotoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5E08EF351F05034B005CC621 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				5E662E441F05EB21006652F4 /* UINavigationBar+Awesome.h */,
+				5E662E451F05EB21006652F4 /* UINavigationBar+Awesome.m */,
+				5E08EF371F050352005CC621 /* UIView+Frame.h */,
+				5E08EF361F050352005CC621 /* UIView+Frame.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		5E11A2761F09E7A900A84C44 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5E11A2771F09E7B900A84C44 /* NLUtils.h */,
+				5E11A2781F09E7B900A84C44 /* NLUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		86C1F04DCB84705D75C385A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C89E1D24C54458DC9CFA0077 /* libPods-NLPhotoBrowser.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9002C91B34516BDA6825733C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC721620DB5D23FF4606528D /* Pods-NLPhotoBrowser.debug.xcconfig */,
+				2BA7A2D10A0D1BAEDE6000F9 /* Pods-NLPhotoBrowser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E08EF071F04DCA5005CC621 /* NLPhotoBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E08EF1E1F04DCA5005CC621 /* Build configuration list for PBXNativeTarget "NLPhotoBrowser" */;
+			buildPhases = (
+				3711A39912983EB26AE726C0 /* [CP] Check Pods Manifest.lock */,
+				5E08EF041F04DCA5005CC621 /* Sources */,
+				5E08EF051F04DCA5005CC621 /* Frameworks */,
+				5E08EF061F04DCA5005CC621 /* Resources */,
+				22C3F9004A41E38291A14426 /* [CP] Embed Pods Frameworks */,
+				2DACEDFE58C940B58067D29D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NLPhotoBrowser;
+			productName = NLPhotoBrowser;
+			productReference = 5E08EF081F04DCA5005CC621 /* NLPhotoBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E08EF001F04DCA5005CC621 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = xlb;
+				TargetAttributes = {
+					5E08EF071F04DCA5005CC621 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+				};
+			};
+			buildConfigurationList = 5E08EF031F04DCA5005CC621 /* Build configuration list for PBXProject "NLPhotoBrowser" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E08EEFF1F04DCA5005CC621;
+			productRefGroup = 5E08EF091F04DCA5005CC621 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E08EF071F04DCA5005CC621 /* NLPhotoBrowser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E08EF061F04DCA5005CC621 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E08EF181F04DCA5005CC621 /* LaunchScreen.storyboard in Resources */,
+				5E08EF151F04DCA5005CC621 /* Assets.xcassets in Resources */,
+				5E08EF131F04DCA5005CC621 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22C3F9004A41E38291A14426 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NLPhotoBrowser/Pods-NLPhotoBrowser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DACEDFE58C940B58067D29D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NLPhotoBrowser/Pods-NLPhotoBrowser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3711A39912983EB26AE726C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E08EF041F04DCA5005CC621 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E5F04E51F05F660003D8EF1 /* NLBaseViewController.m in Sources */,
+				5E11A2891F0A4C1500A84C44 /* XFJActionSheetView.m in Sources */,
+				5E5F04EB1F064C82003D8EF1 /* NLDescribBaseView.m in Sources */,
+				5E08EF311F04F566005CC621 /* NLCollectionViewDataSource.m in Sources */,
+				5E08EF261F04DE74005CC621 /* NLPhotoBrowserViewController.m in Sources */,
+				5E08EF101F04DCA5005CC621 /* ViewController.m in Sources */,
+				5E08EF381F050352005CC621 /* UIView+Frame.m in Sources */,
+				5E08EF1B1F04DCA5005CC621 /* main.m in Sources */,
+				5E5F04E81F062C97003D8EF1 /* NLBottomToolbar.m in Sources */,
+				5E11A2881F0A4C1500A84C44 /* XFJActionSheetHeaderView.m in Sources */,
+				5E08EF0D1F04DCA5005CC621 /* AppDelegate.m in Sources */,
+				5E08EF2D1F04DEC1005CC621 /* NLPhotoCell.m in Sources */,
+				5E08EF341F04F761005CC621 /* NLPhotoModel.m in Sources */,
+				5E11A2791F09E7B900A84C44 /* NLUtils.m in Sources */,
+				5E08EF2A1F04DE9F005CC621 /* NLBrowserViewModel.m in Sources */,
+				5E662E461F05EB21006652F4 /* UINavigationBar+Awesome.m in Sources */,
+				5E11A2831F0A2A4000A84C44 /* NLTitleView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5E08EF111F04DCA5005CC621 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E08EF121F04DCA5005CC621 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E08EF161F04DCA5005CC621 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E08EF171F04DCA5005CC621 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E08EF1C1F04DCA5005CC621 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5E08EF1D1F04DCA5005CC621 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E08EF1F1F04DCA5005CC621 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC721620DB5D23FF4606528D /* Pods-NLPhotoBrowser.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LXR6SDFEMJ;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/YYCache\"",
+					"\"${PODS_ROOT}/Headers/Public/YYImage\"",
+					"\"${PODS_ROOT}/Headers/Public/YYWebImage\"",
+					"$(SRCROOT)",
+				);
+				INFOPLIST_FILE = NLPhotoBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liangzc.NLPhotoBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E08EF201F04DCA5005CC621 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BA7A2D10A0D1BAEDE6000F9 /* Pods-NLPhotoBrowser.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LXR6SDFEMJ;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/YYCache\"",
+					"\"${PODS_ROOT}/Headers/Public/YYImage\"",
+					"\"${PODS_ROOT}/Headers/Public/YYWebImage\"",
+					"$(SRCROOT)",
+				);
+				INFOPLIST_FILE = NLPhotoBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liangzc.NLPhotoBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E08EF031F04DCA5005CC621 /* Build configuration list for PBXProject "NLPhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E08EF1C1F04DCA5005CC621 /* Debug */,
+				5E08EF1D1F04DCA5005CC621 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E08EF1E1F04DCA5005CC621 /* Build configuration list for PBXNativeTarget "NLPhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E08EF1F1F04DCA5005CC621 /* Debug */,
+				5E08EF201F04DCA5005CC621 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E08EF001F04DCA5005CC621 /* Project object */;
+}
