@@ -17,7 +17,6 @@
 @interface NLPhotoCell () <UIScrollViewDelegate>
 
 @property (nonatomic, strong) UIScrollView *scrollView;
-@property (nonatomic, strong) UIImageView  *imageView;
 @property (nonatomic, strong) UIView *describBaseView;
 @property (nonatomic, strong) UILabel *describLabel;
 
@@ -28,6 +27,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
+        _hasLoadImage = NO;
         [self setupViews];
     }
     return self;
@@ -137,6 +137,7 @@
     
     [self.imageView yy_setImageWithURL:[NSURL URLWithString:photo.imageUrl] placeholder:nil options:YYWebImageOptionProgressive completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
         if (!error) {
+            self.hasLoadImage = YES;
             self.scrollView.maximumZoomScale = 3;
             [self resizesSubViews];
         }

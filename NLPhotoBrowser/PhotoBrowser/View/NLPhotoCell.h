@@ -19,4 +19,8 @@
 
 @property (nonatomic, assign) id<NLPhotoCellDelegate> delegate;
 @property (nonatomic, strong) NLPhotoModel *photo;
+
+@property (nonatomic, strong) UIImageView  *imageView;
+
+@property (nonatomic, assign) BOOL hasLoadImage;
 @end

@@ -8,6 +8,7 @@
 
 #import "XFJActionSheetView.h"
 
+
 static CGFloat const kXFJCategroyCellHeight = 50.0;
 static CGFloat const kXFJCategroyHeaderViewHeight = 5.0;
 static NSTimeInterval const kAnimationDuration = 0.3;
@@ -134,6 +135,12 @@ static NSString *const kXFJCategoryViewCellIdentifier = @"XFJCategoryViewCell";
     if (indexPath.section == 0) {
         if (self.didSelectRowBlock) {
             self.didSelectRowBlock(indexPath.row);
+        }
+    } else {
+        if (indexPath.row==2) {
+            if (self.didSelectRowBlock) {
+                self.didSelectRowBlock(indexPath.row);
+            }
         }
     }
     [self hide];

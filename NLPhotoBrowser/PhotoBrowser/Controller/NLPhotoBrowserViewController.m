@@ -20,6 +20,8 @@
 #import "UIView+Frame.h"
 #import "NLTitleView.h"
 #import "XFJActionSheetView.h"
+#import <AssetsLibrary/AssetsLibrary.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 
 @interface NLPhotoBrowserViewController () <UICollectionViewDelegate, NLBottomToolbarDelegate, NLPhotoCellDelegate>
 
@@ -31,6 +33,7 @@
 @property (nonatomic, strong) NLCollectionViewDataSource *dataSource;
 @property (nonatomic, copy) NSArray *photos;
 @property (nonatomic, copy) NSString *describ;
+@property (nonatomic,strong) UILabel *tipLabel;
 @end
 
 static NSString * const kPhotoCellReuseIdentifier = @"NLPhotoCell";
@@ -130,9 +133,63 @@ static CGFloat const kMaxDescribViewHeight = 80.0;
     
     NSArray *items = @[@"发送给朋友",@"收藏",@"保存图片"];
     XFJActionSheetView *sheetView = [[XFJActionSheetView alloc] initWithItems:items didSelectRowBlock:^(NSUInteger index) {
-        
+        if (index==2) {
+            [self saveImage];
+        }
     }];
     [sheetView show];
+}
+
+#pragma mark - 处理点击事件
+//保存图像
+- (void)saveImage {
+    NSArray *cells = [_collectionView visibleCells];
+    NLPhotoCell *cell = (NLPhotoCell *)cells.firstObject;
+    if (cell.hasLoadImage) {
+        if ([cell.imageView isKindOfClass:[UIImageView class]]) {
+            NSData *imageData = nil;
+            if (!imageData) {
+                imageData = UIImagePNGRepresentation(cell.imageView.image);
+            }
+            if (!imageData) {
+                [self showTip:@"保存失败"];
+                return;
+            }
+            ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+            NSDictionary *metadata = @{@"UTI":(__bridge NSString *)kUTTypeImage};
+            [library writeImageDataToSavedPhotosAlbum:imageData metadata:metadata completionBlock:^(NSURL *assetURL, NSError *error) {
+                if (error) {
+                    // "保存图片失败"
+                    [self showTip:@"保存失败"];
+                }else{
+                    //保存图片成功"
+                    [self showTip:@"保存成功"];
+                }
+            }] ;
+        }
+        
+    } else {
+        [self showTip:@"保存失败"];
+    }
+}
+
+- (void)showTip:(NSString *)tipStr {
+    if (_tipLabel) {
+        [_tipLabel removeFromSuperview];
+        _tipLabel = nil;
+    }
+    UILabel *label = [[UILabel alloc] init];
+    label.frame = CGRectMake((self.view.bounds.size.width - 150)*0.5, (self.view.bounds.size.height - 40)*0.5, 150, 40);
+    _tipLabel = label;
+    label.textColor = [UIColor whiteColor];
+    label.backgroundColor = [UIColor colorWithRed:0.1f green:0.1f blue:0.1f alpha:0.90f];
+    label.layer.cornerRadius = 5;
+    label.clipsToBounds = YES;
+    label.textAlignment = NSTextAlignmentCenter;
+    label.font = [UIFont boldSystemFontOfSize:20];
+    label.text = tipStr;
+    [self.view addSubview:label];
+    [label performSelector:@selector(removeFromSuperview) withObject:nil afterDelay:1.0];
 }
 
 - (void)didReceiveMemoryWarning {
